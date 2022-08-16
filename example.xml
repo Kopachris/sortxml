@@ -1,0 +1,1295 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--This XML document is given as an example document to sort certain elements of with sortxml.py.
+
+Example XPath to grab the fields of a certain dataset: "./DataSets/DataSet[@Name='ARForm']/Fields"
+
+This is not meant to be an actual, runnable SSRS report .rdl file.-->
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="dsARForm">
+      <DataSourceReference></DataSourceReference>
+      <rd:SecurityType>None</rd:SecurityType>
+      <rd:DataSourceID></rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="ARForm">
+      <Query>
+        <DataSourceName>dsARForm</DataSourceName>
+        <CommandText></CommandText>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+      <Fields>
+        <Field Name="RptLanguageID">
+          <DataField>RptLanguageID</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Company">
+          <DataField>Company</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CreditMemo">
+          <DataField>CreditMemo</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="CustNum">
+          <DataField>CustNum</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="DocDepositCredit">
+          <DataField>DocDepositCredit</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="DocInvoiceAmt">
+          <DataField>DocInvoiceAmt</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="DocRounding">
+          <DataField>DocRounding</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="DocumentPrinted">
+          <DataField>DocumentPrinted</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="InvoiceComment">
+          <DataField>InvoiceComment</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="InvoiceDate">
+          <DataField>InvoiceDate</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="InvoiceNum">
+          <DataField>InvoiceNum</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="InvoiceType">
+          <DataField>InvoiceType</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="LegalNumber">
+          <DataField>LegalNumber</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="PONum">
+          <DataField>PONum</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SoldToInvoiceAddress">
+          <DataField>SoldToInvoiceAddress</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="Calc_BillToAddressList">
+          <DataField>Calc_BillToAddressList</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Calc_BottomAddress">
+          <DataField>Calc_BottomAddress</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Calc_CompanyAddressList">
+          <DataField>Calc_CompanyAddressList</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Calc_CurrDocDesc">
+          <DataField>Calc_CurrDocDesc</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Calc_CurSymbol">
+          <DataField>Calc_CurSymbol</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Calc_CustContactName">
+          <DataField>Calc_CustContactName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Calc_CustPartOpts">
+          <DataField>Calc_CustPartOpts</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Calc_DteOrdrd">
+          <DataField>Calc_DteOrdrd</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="Calc_fFOB">
+          <DataField>Calc_fFOB</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Calc_MulPackNum">
+          <DataField>Calc_MulPackNum</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="Calc_mulponum">
+          <DataField>Calc_mulponum</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="Calc_MulShipDate">
+          <DataField>Calc_MulShipDate</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="Calc_MulShipTo">
+          <DataField>Calc_MulShipTo</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="Calc_MulShipVia">
+          <DataField>Calc_MulShipVia</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="Calc_MultSoldTo">
+          <DataField>Calc_MultSoldTo</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="Calc_MultTaxID">
+          <DataField>Calc_MultTaxID</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="Calc_NumRecordPerPage">
+          <DataField>Calc_NumRecordPerPage</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Calc_NumTotalParts">
+          <DataField>Calc_NumTotalParts</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Calc_PackNum">
+          <DataField>Calc_PackNum</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Calc_PrintBottomAddress">
+          <DataField>Calc_PrintBottomAddress</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="Calc_SalesPerson">
+          <DataField>Calc_SalesPerson</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Calc_SalesTerms">
+          <DataField>Calc_SalesTerms</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Calc_ShipDate">
+          <DataField>Calc_ShipDate</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="Calc_ShipToAddressList">
+          <DataField>Calc_ShipToAddressList</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Calc_ShipToContactName">
+          <DataField>Calc_ShipToContactName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Calc_ShipVia">
+          <DataField>Calc_ShipVia</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Calc_Voucher_String">
+          <DataField>Calc_Voucher_String</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CurrencyCode_CurrencyID">
+          <DataField>CurrencyCode_CurrencyID</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CurrencyCode_DecimalsGeneral">
+          <DataField>CurrencyCode_DecimalsGeneral</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Calc_SEBankRef">
+          <DataField>Calc_SEBankRef</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="AdvanceBillCredit">
+          <DataField>AdvanceBillCredit</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="Calc_CustResaleID">
+          <DataField>Calc_CustResaleID</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BranchID">
+          <DataField>BranchID</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="InvcDtl_Company">
+          <DataField>InvcDtl_Company</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CustAgentTaxRegNo">
+          <DataField>CustAgentTaxRegNo</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DocAdvanceBillCredit">
+          <DataField>DocAdvanceBillCredit</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="DocDiscount">
+          <DataField>DocDiscount</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="DocUnitPrice">
+          <DataField>DocUnitPrice</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="InvcHead_RevisionNum">
+          <DataField>InvcHead_RevisionNum</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="InvcDtl_InvoiceComment">
+          <DataField>InvcDtl_InvoiceComment</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="InvcHead_RevisionDate">
+          <DataField>InvcHead_RevisionDate</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="InvoiceLine">
+          <DataField>InvoiceLine</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="InvcDtl_InvoiceNum">
+          <DataField>InvcDtl_InvoiceNum</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="PackLine">
+          <DataField>PackLine</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="PackNum">
+          <DataField>PackNum</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="PartNum">
+          <DataField>PartNum</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="POLine">
+          <DataField>POLine</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="PricePerCode">
+          <DataField>PricePerCode</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RevisionNum">
+          <DataField>RevisionNum</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SalesUM">
+          <DataField>SalesUM</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SellingOrderQty">
+          <DataField>SellingOrderQty</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="SellingShipQty">
+          <DataField>SellingShipQty</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="ShipDate">
+          <DataField>ShipDate</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="XPartNum">
+          <DataField>XPartNum</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="XRevisionNum">
+          <DataField>XRevisionNum</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Calc_ActDate">
+          <DataField>Calc_ActDate</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="Calc_BackOrdQty">
+          <DataField>Calc_BackOrdQty</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="Calc_ExtPrice">
+          <DataField>Calc_ExtPrice</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="Calc_Duration">
+          <DataField>Calc_Duration</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Calc_GetNextLegalNum">
+          <DataField>Calc_GetNextLegalNum</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="Calc_InvcComment">
+          <DataField>Calc_InvcComment</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Calc_InvoiceDisplayLine">
+          <DataField>Calc_InvoiceDisplayLine</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="Calc_JobNumber">
+          <DataField>Calc_JobNumber</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Calc_IsKitParent">
+          <DataField>Calc_IsKitParent</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="Calc_DspDocLineTax">
+          <DataField>Calc_DspDocLineTax</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="Calc_LabDur">
+          <DataField>Calc_LabDur</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Calc_LabMod">
+          <DataField>Calc_LabMod</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Calc_Labor">
+          <DataField>Calc_Labor</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="Calc_LineDesc">
+          <DataField>Calc_LineDesc</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Calc_LineSoldToAddressList">
+          <DataField>Calc_LineSoldToAddressList</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Calc_MatDur">
+          <DataField>Calc_MatDur</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Calc_Mate">
+          <DataField>Calc_Mate</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="Calc_MatMod">
+          <DataField>Calc_MatMod</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Calc_Misc">
+          <DataField>Calc_Misc</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="Calc_MiscDur">
+          <DataField>Calc_MiscDur</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Calc_MiscMod">
+          <DataField>Calc_MiscMod</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Calc_Modifier">
+          <DataField>Calc_Modifier</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Calc_NextLegalNumID">
+          <DataField>Calc_NextLegalNumID</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Calc_NumLineByInv">
+          <DataField>Calc_NumLineByInv</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Calc_ponum">
+          <DataField>Calc_ponum</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Calc_PSLegalNum">
+          <DataField>Calc_PSLegalNum</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Calc_Reference">
+          <DataField>Calc_Reference</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Calc_SerialNumber">
+          <DataField>Calc_SerialNumber</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="InvcDtl_Calc_ShipToAddressList">
+          <DataField>InvcDtl_Calc_ShipToAddressList</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="InvcDtl_Calc_ShipToContactName">
+          <DataField>InvcDtl_Calc_ShipToContactName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Calc_ShipToShipVia">
+          <DataField>Calc_ShipToShipVia</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Calc_StateTaxID">
+          <DataField>Calc_StateTaxID</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Calc_WarrDesc">
+          <DataField>Calc_WarrDesc</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Calc_WhseCode">
+          <DataField>Calc_WhseCode</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="OrderLine_DisplaySeq">
+          <DataField>OrderLine_DisplaySeq</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="OrderLine_KitFlag">
+          <DataField>OrderLine_KitFlag</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="OrderLine_KitPrintCompsInv">
+          <DataField>OrderLine_KitPrintCompsInv</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="OrderLine_KitsLoaded">
+          <DataField>OrderLine_KitsLoaded</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="OrderLine_OrderLine">
+          <DataField>OrderLine_OrderLine</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="PartNum_PartDescription">
+          <DataField>PartNum_PartDescription</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="PONum_Line">
+          <Value>
+            =iif(Fields!Calc_mulponum.Value = False and not isnothing(Fields!POLine.Value), Fields!POLine.Value,
+            iif(Fields!Calc_mulponum.Value and isnothing(Fields!POLine.Value), Fields!Calc_ponum.Value,
+            iif(Fields!Calc_mulponum.Value, Fields!Calc_ponum.Value &amp; " / " &amp; Fields!POLine.Value, "")
+            )
+            )
+          </Value>
+        </Field>
+        <Field Name="CallComment">
+          <DataField>CallComment</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CallQty">
+          <DataField>CallQty</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="FSCallDt_PartNum">
+          <DataField>FSCallDt_PartNum</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="FSCallDt_RevisionNum">
+          <DataField>FSCallDt_RevisionNum</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="FSCallDt_XPartNum">
+          <DataField>FSCallDt_XPartNum</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="FSCallDt_XRevisionNum">
+          <DataField>FSCallDt_XRevisionNum</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Calc_CProb">
+          <DataField>Calc_CProb</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Calc_fCallLine">
+          <DataField>Calc_fCallLine</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Calc_fCallNum">
+          <DataField>Calc_fCallNum</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Calc_InvoiceLine">
+          <DataField>Calc_InvoiceLine</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="FSCallMt_Calc_InvoiceNum">
+          <DataField>FSCallMt_Calc_InvoiceNum</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Calc_InvoiceNum">
+          <DataField>Calc_InvoiceNum</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Calc_MatNum">
+          <DataField>Calc_MatNum</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Calc_MtPaNum">
+          <DataField>Calc_MtPaNum</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Calc_MtQty">
+          <DataField>Calc_MtQty</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="CallPart">
+          <Value>=iif(isnothing(Fields!FSCallDt_XPartNum.Value), Fields!FSCallDt_PartNum.Value, Fields!FSCallDt_XPartNum.Value)</Value>
+        </Field>
+        <Field Name="Calc_MtBillPrice">
+          <DataField>Calc_MtBillPrice</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="Calc_MtExtPrice">
+          <DataField>Calc_MtExtPrice</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="Calc_MtLinedesc">
+          <DataField>Calc_MtLinedesc</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Calc_MtRevNum">
+          <DataField>Calc_MtRevNum</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ResReasonCode">
+          <DataField>ResReasonCode</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MtPaNum">
+          <Value>=iif(Fields!Calc_MtPaNum.Value &lt;&gt; "", Fields!Calc_MtPaNum.Value, "")</Value>
+        </Field>
+        <Field Name="Calc_UnitPrice">
+          <DataField>Calc_UnitPrice</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <rd:UserDefined>true</rd:UserDefined>
+        </Field>
+        <Field Name="Label_Calc_ActDate">
+          <DataField>Label_Calc_ActDate</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Label_RptLanguageID">
+          <DataField>Label_RptLanguageID</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Label_Calc_CreditMemo">
+          <DataField>Label_Calc_CreditMemo</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Label_Calc_Duration">
+          <DataField>Label_Calc_Duration</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Label_Calc_JobNumber">
+          <DataField>Label_Calc_JobNumber</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Label_Calc_LabDur">
+          <DataField>Label_Calc_LabDur</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Label_Calc_Labor">
+          <DataField>Label_Calc_Labor</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Label_Calc_MatDur">
+          <DataField>Label_Calc_MatDur</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Label_Calc_Mate">
+          <DataField>Label_Calc_Mate</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Label_Calc_Misc">
+          <DataField>Label_Calc_Misc</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Label_Calc_MiscDur">
+          <DataField>Label_Calc_MiscDur</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Label_Calc_MtExtPrice">
+          <DataField>Label_Calc_MtExtPrice</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Label_Calc_SerialNumber">
+          <DataField>Label_Calc_SerialNumber</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Label_DepositCredit">
+          <DataField>Label_DepositCredit</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Label_DocUnitPrice">
+          <DataField>Label_DocUnitPrice</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Label_InvoiceLine">
+          <DataField>Label_InvoiceLine</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Label_PONum">
+          <DataField>Label_PONum</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Label_ProbReasonCode">
+          <DataField>Label_ProbReasonCode</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Label_Reference">
+          <DataField>Label_Reference</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RptLiteralsLBckOrd">
+          <DataField>RptLiteralsLBckOrd</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RptLiteralsLBillTo">
+          <DataField>RptLiteralsLBillTo</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RptLiteralsLCusPart">
+          <DataField>RptLiteralsLCusPart</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RptLiteralsLComeFrom">
+          <DataField>RptLiteralsLComeFrom</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RptLiteralsLTWTotalTax">
+          <DataField>RptLiteralsLTWTotalTax</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RptLiteralsLDate">
+          <DataField>RptLiteralsLDate</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RptLiteralsLContinueInNext">
+          <DataField>RptLiteralsLContinueInNext</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RptLiteralsLEMaila">
+          <DataField>RptLiteralsLEMaila</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RptLiteralsLExtPrice">
+          <DataField>RptLiteralsLExtPrice</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RptLiteralsLTax">
+          <DataField>RptLiteralsLTax</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RptLiteralsLFax">
+          <DataField>RptLiteralsLFax</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RptLiteralsLFOB">
+          <DataField>RptLiteralsLFOB</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RptLiteralsLHdng">
+          <DataField>RptLiteralsLHdng</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RptLiteralsLInvoice">
+          <DataField>RptLiteralsLInvoice</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RptLiteralsLLegNum">
+          <DataField>RptLiteralsLLegNum</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RptLiteralsLLine">
+          <DataField>RptLiteralsLLine</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RptLiteralsLLineRef">
+          <DataField>RptLiteralsLLineRef</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RptLiteralsLOurPart">
+          <DataField>RptLiteralsLOurPart</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RptLiteralsLAULessDeposit">
+          <DataField>RptLiteralsLAULessDeposit</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RptLiteralsLof">
+          <DataField>RptLiteralsLof</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RptLiteralsLPackSlp">
+          <DataField>RptLiteralsLPackSlp</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RptLiteralsLPage">
+          <DataField>RptLiteralsLPage</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RptLiteralsLPartDesc">
+          <DataField>RptLiteralsLPartDesc</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RptLiteralsLPhone">
+          <DataField>RptLiteralsLPhone</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RptLiteralsLMiscChgs">
+          <DataField>RptLiteralsLMiscChgs</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RptLiteralsLPartRev">
+          <DataField>RptLiteralsLPartRev</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RptLiteralsLPONum">
+          <DataField>RptLiteralsLPONum</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RptLiteralsLQty">
+          <DataField>RptLiteralsLQty</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RptLiteralsLQtyOrd">
+          <DataField>RptLiteralsLQtyOrd</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RptLiteralsLRev">
+          <DataField>RptLiteralsLRev</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RptLiteralsLLinesSubtotal">
+          <DataField>RptLiteralsLLinesSubtotal</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RptLiteralsLRounding">
+          <DataField>RptLiteralsLRounding</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RptLiteralsLSalesKit">
+          <DataField>RptLiteralsLSalesKit</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RptLiteralsLSeeBelow">
+          <DataField>RptLiteralsLSeeBelow</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RptLiteralsLShipTo">
+          <DataField>RptLiteralsLShipTo</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RptLiteralsLShpVia">
+          <DataField>RptLiteralsLShpVia</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RptLiteralsLSlsTxID">
+          <DataField>RptLiteralsLSlsTxID</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RptLiteralsLSoldToL">
+          <DataField>RptLiteralsLSoldToL</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RptLiteralsLTotal">
+          <DataField>RptLiteralsLTotal</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RptLiteralsLWarrantyA">
+          <DataField>RptLiteralsLWarrantyA</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RptLiteralsLWHCode">
+          <DataField>RptLiteralsLWHCode</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Label_ShipDate">
+          <DataField>Label_ShipDate</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Label_UnitPrice">
+          <DataField>Label_UnitPrice</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RptLiteralsLSEOCR">
+          <DataField>RptLiteralsLSEOCR</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RptLiteralsLNOKID">
+          <DataField>RptLiteralsLNOKID</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RptLiteralsLDiscountPercent">
+          <DataField>RptLiteralsLDiscountPercent</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+          <rd:UserDefined>true</rd:UserDefined>
+        </Field>
+        <Field Name="RptLiteralsLVatNr">
+          <DataField>RptLiteralsLVatNr</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CHISRCodeLine">
+          <DataField>CHISRCodeLine</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Calc_CHBankAcctIBANCode">
+          <DataField>Calc_CHBankAcctIBANCode</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Calc_CHBankAcctISRPartyID">
+          <DataField>Calc_CHBankAcctISRPartyID</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RptLiteralsLlessAdvBill">
+          <DataField>RptLiteralsLlessAdvBill</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DropShipPackSlip">
+          <DataField>DropShipPackSlip</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+          <rd:UserDefined>true</rd:UserDefined>
+        </Field>
+        <Field Name="InvoiceRef">
+          <DataField>InvoiceRef</DataField>
+          <rd:UserDefined>true</rd:UserDefined>
+        </Field>
+        <Field Name="CMReason">
+          <DataField>CMReason</DataField>
+          <rd:UserDefined>true</rd:UserDefined>
+        </Field>
+        <Field Name="Calc_CustFax">
+          <DataField>Calc_CustFax</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="EMailAddress">
+          <DataField>EMailAddress</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="FaxNum">
+          <DataField>FaxNum</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Calc_MtCount">
+          <DataField>Calc_MtCount</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="ResaleID">
+          <DataField>ResaleID</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Label_Calc_DteOrdrd">
+          <DataField>Label_Calc_DteOrdrd</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Label_Calc_SalesPerson">
+          <DataField>Label_Calc_SalesPerson</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Label_Calc_SalesTerms">
+          <DataField>Label_Calc_SalesTerms</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Calc_CustEMailAddress">
+          <DataField>Calc_CustEMailAddress</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Calc_DropShipPackSlip">
+          <DataField>Calc_DropShipPackSlip</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="FSContDt_InvoiceComment">
+          <DataField>FSContDt_InvoiceComment</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ContractQty">
+          <DataField>ContractQty</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="PricePerUnit">
+          <DataField>PricePerUnit</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="DocPricePerUnit">
+          <DataField>DocPricePerUnit</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="Calc_ContPrice">
+          <DataField>Calc_ContPrice</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="Label_PricePerCode">
+          <DataField>Label_PricePerCode</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Label_PartNum">
+          <DataField>Label_PartNum</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Label_ExtPrice">
+          <DataField>Label_ExtPrice</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Calc_PELegalText">
+          <DataField>Calc_PELegalText</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Calc_DocInvoiceAmt">
+          <DataField>Calc_DocInvoiceAmt</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="RptLiteralsLAmt">
+          <DataField>RptLiteralsLAmt</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Label_Calc_SEBankRef">
+          <DataField>Label_Calc_SEBankRef</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Calc_TaxMethod">
+          <DataField>Calc_TaxMethod</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SEBankRef">
+          <DataField>SEBankRef</DataField>
+          <rd:UserDefined>true</rd:UserDefined>
+        </Field>
+        <Field Name="ContractLine">
+          <DataField>ContractLine</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Calc_LessPrepaidDeposits">
+          <DataField>Calc_LessPrepaidDeposits</DataField>
+          <rd:UserDefined>true</rd:UserDefined>
+        </Field>
+        <Field Name="ContractPartNum">
+          <DataField>ContractPartNum</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RptLiteralsLLessPrepDeposits">
+          <DataField>RptLiteralsLLessPrepDeposits</DataField>
+          <rd:UserDefined>true</rd:UserDefined>
+        </Field>
+        <Field Name="ContractPartDescription">
+          <DataField>ContractPartDescription</DataField>
+          <rd:UserDefined>true</rd:UserDefined>
+        </Field>
+        <Field Name="CurrencyCode_DecimalsPrice">
+          <DataField>CurrencyCode_DecimalsPrice</DataField>
+          <rd:UserDefined>true</rd:UserDefined>
+        </Field>
+        <Field Name="HasFinCharges">
+          <DataField>HasFinCharges</DataField>
+          <rd:UserDefined>true</rd:UserDefined>
+        </Field>
+        <Field Name="HasMiscCharges">
+          <DataField>HasMiscCharges</DataField>
+          <rd:UserDefined>true</rd:UserDefined>
+        </Field>
+        <Field Name="Description">
+          <DataField>Description</DataField>
+          <rd:UserDefined>true</rd:UserDefined>
+        </Field>
+        <Field Name="Calc_DocDspTaxAmt">
+          <DataField>Calc_DocDspTaxAmt</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="DocMiscAmt">
+          <DataField>DocMiscAmt</DataField>
+          <rd:UserDefined>true</rd:UserDefined>
+        </Field>
+        <Field Name="SeqNum">
+          <DataField>SeqNum</DataField>
+          <rd:UserDefined>true</rd:UserDefined>
+        </Field>
+        <Field Name="Label_Description">
+          <DataField>Label_Description</DataField>
+          <rd:UserDefined>true</rd:UserDefined>
+        </Field>
+        <Field Name="Calc_TotalMiscChrg">
+          <DataField>Calc_TotalMiscChrg</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="Calc_ExtPriceTotal">
+          <DataField>Calc_ExtPriceTotal</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="ContractNum">
+          <DataField>ContractNum</DataField>
+          <rd:UserDefined>true</rd:UserDefined>
+        </Field>
+        <Field Name="DisplayLineInfo">
+          <DataField>DisplayLineInfo</DataField>
+          <rd:UserDefined>true</rd:UserDefined>
+        </Field>
+        <Field Name="RptLiteralsLCopy">
+          <DataField>RptLiteralsLCopy</DataField>
+          <rd:UserDefined>true</rd:UserDefined>
+        </Field>
+        <Field Name="RptLiteralsLPrintedAt">
+          <DataField>RptLiteralsLPrintedAt</DataField>
+          <rd:UserDefined>true</rd:UserDefined>
+        </Field>
+        <Field Name="RptLiteralsLFirstPrinted">
+          <DataField>RptLiteralsLFirstPrinted</DataField>
+          <rd:UserDefined>true</rd:UserDefined>
+        </Field>
+        <Field Name="Calc_IsDraftCopy">
+          <DataField>Calc_IsDraftCopy</DataField>
+          <rd:UserDefined>true</rd:UserDefined>
+        </Field>
+        <Field Name="FirstPrintDate">
+          <DataField>FirstPrintDate</DataField>
+          <rd:UserDefined>true</rd:UserDefined>
+        </Field>
+        <Field Name="DocCopyNum">
+          <DataField>DocCopyNum</DataField>
+          <rd:UserDefined>true</rd:UserDefined>
+        </Field>
+        <Field Name="Posted">
+          <DataField>Posted</DataField>
+          <rd:UserDefined>true</rd:UserDefined>
+        </Field>
+        <Field Name="RptLiteralsLDraftCopy">
+          <DataField>RptLiteralsLDraftCopy</DataField>
+          <rd:UserDefined>true</rd:UserDefined>
+        </Field>
+        <Field Name="RptLiteralsLInternalUse">
+          <DataField>RptLiteralsLInternalUse</DataField>
+          <rd:UserDefined>true</rd:UserDefined>
+        </Field>
+        <Field Name="FSAEquipmentPartNum">
+          <DataField>FSAEquipmentPartNum</DataField>
+          <rd:UserDefined>true</rd:UserDefined>
+        </Field>
+        <Field Name="FSAServiceOrderNum">
+          <DataField>FSAServiceOrderNum</DataField>
+          <rd:UserDefined>true</rd:UserDefined>
+        </Field>
+        <Field Name="RptLiteralsLFSAEquipmentPartNum">
+          <DataField>RptLiteralsLFSAEquipmentPartNum</DataField>
+          <rd:UserDefined>true</rd:UserDefined>
+        </Field>
+        <Field Name="RptLiteralsLFSAServiceOrderNum">
+          <DataField>RptLiteralsLFSAServiceOrderNum</DataField>
+          <rd:UserDefined>true</rd:UserDefined>
+        </Field>
+        <Field Name="EpicorFSA">
+          <DataField>EpicorFSA</DataField>
+          <rd:UserDefined>true</rd:UserDefined>
+        </Field>
+        <Field Name="OrderLine_KitPricing">
+          <DataField>OrderLine_KitPricing</DataField>
+          <rd:UserDefined>true</rd:UserDefined>
+        </Field>
+        <Field Name="ReverseChargeTaxTotal">
+          <DataField>Calc_ReverseChargeTaxTotal</DataField>
+          <rd:UserDefined>true</rd:UserDefined>
+        </Field>
+        <Field Name="RptLiteralsLReverseChargeTax">
+          <DataField>RptLiteralsLReverseChargeTax</DataField>
+          <rd:UserDefined>true</rd:UserDefined>
+        </Field>
+        <Field Name="PhoneNum">
+          <DataField>PhoneNum</DataField>
+          <rd:UserDefined>true</rd:UserDefined>
+        </Field>
+        <Field Name="ShipToPO_c">
+          <DataField>ShipToPO_c</DataField>
+          <rd:UserDefined>true</rd:UserDefined>
+        </Field>
+        <Field Name="DueDate">
+          <DataField>DueDate</DataField>
+          <rd:UserDefined>true</rd:UserDefined>
+        </Field>
+        <Field Name="CustID">
+          <DataField>CustID</DataField>
+          <rd:UserDefined>true</rd:UserDefined>
+        </Field>
+        <Field Name="HDCaseNum">
+          <DataField>HDCaseNum</DataField>
+          <rd:UserDefined>true</rd:UserDefined>
+        </Field>
+        <Field Name="RMANum">
+          <DataField>RMANum</DataField>
+          <rd:UserDefined>true</rd:UserDefined>
+        </Field>
+        <Field Name="SellingReqQty">
+          <DataField>SellingReqQty</DataField>
+          <rd:UserDefined>true</rd:UserDefined>
+        </Field>
+        <Field Name="TrackingNumber">
+          <DataField>TrackingNumber</DataField>
+          <rd:UserDefined>true</rd:UserDefined>
+        </Field>
+        <Field Name="OrderNum">
+          <DataField>OrderNum</DataField>
+          <rd:UserDefined>true</rd:UserDefined>
+        </Field>
+        <Field Name="OrderComment">
+          <DataField>OrderComment</DataField>
+          <rd:UserDefined>true</rd:UserDefined>
+        </Field>
+        <Field Name="RMACaseNum">
+          <DataField>RMACaseNum</DataField>
+          <rd:UserDefined>true</rd:UserDefined>
+        </Field>
+        <Field Name="ODDocExtPriceDtl">
+          <DataField>ODDocExtPriceDtl</DataField>
+          <rd:UserDefined>true</rd:UserDefined>
+        </Field>
+        <Field Name="ODDocDiscount">
+          <DataField>ODDocDiscount</DataField>
+          <rd:UserDefined>true</rd:UserDefined>
+        </Field>
+        <Field Name="TermsDesc">
+          <DataField>TermsDesc</DataField>
+          <rd:UserDefined>true</rd:UserDefined>
+        </Field>
+        <Field Name="PayFlag">
+          <DataField>PayFlag</DataField>
+          <rd:UserDefined>true</rd:UserDefined>
+        </Field>
+        <Field Name="FreightBilling_c">
+          <DataField>FreightBilling_c</DataField>
+          <rd:UserDefined>true</rd:UserDefined>
+        </Field>
+        <Field Name="CodeDesc">
+          <DataField>CodeDesc</DataField>
+          <rd:UserDefined>true</rd:UserDefined>
+        </Field>
+        <Field Name="OrderDate">
+          <DataField>OrderDate</DataField>
+          <rd:UserDefined>true</rd:UserDefined>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="Company">
+      <Query>
+        <DataSourceName>dsARForm</DataSourceName>
+        <CommandText></CommandText>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+      <Fields>
+        <Field Name="FaxNum">
+          <DataField>FaxNum</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="PhoneNum">
+          <DataField>PhoneNum</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Calc_usePreNumberFmt">
+          <DataField>Calc_usePreNumberFmt</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="StateTaxID">
+          <DataField>StateTaxID</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Calc_Localization">
+          <DataField>Calc_Localization</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Calc_UseCopyNum">
+          <DataField>Calc_UseCopyNum</DataField>
+          <rd:UserDefined>true</rd:UserDefined>
+        </Field>
+        <Field Name="Calc_ExecutionTime">
+          <DataField>Calc_ExecutionTime</DataField>
+          <rd:UserDefined>true</rd:UserDefined>
+        </Field>
+        <Field Name="Name">
+          <DataField>Name</DataField>
+          <rd:UserDefined>true</rd:UserDefined>
+        </Field>
+        <Field Name="Address1">
+          <DataField>Address1</DataField>
+          <rd:UserDefined>true</rd:UserDefined>
+        </Field>
+        <Field Name="Calc_INAddressList">
+          <DataField>Calc_INAddressList</DataField>
+          <rd:UserDefined>true</rd:UserDefined>
+        </Field>
+        <Field Name="City">
+          <DataField>City</DataField>
+          <rd:UserDefined>true</rd:UserDefined>
+        </Field>
+        <Field Name="State">
+          <DataField>State</DataField>
+          <rd:UserDefined>true</rd:UserDefined>
+        </Field>
+        <Field Name="Zip">
+          <DataField>Zip</DataField>
+          <rd:UserDefined>true</rd:UserDefined>
+        </Field>
+        <Field Name="Country">
+          <DataField>Country</DataField>
+          <rd:UserDefined>true</rd:UserDefined>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="RptParameter">
+      <Query>
+        <DataSourceName>dsARForm</DataSourceName>
+        <CommandText></CommandText>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+      <Fields>
+        <Field Name="DecimalsQuantity">
+          <DataField>DecimalsQuantity</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="ReportImages">
+      <Query>
+        <DataSourceName>dsARForm</DataSourceName>
+        <CommandText></CommandText>
+      </Query>
+      <Fields>
+        <Field Name="Logo">
+          <DataField>Logo</DataField>
+          <rd:UserDefined>true</rd:UserDefined>
+        </Field>
+        <Field Name="LogoMimeType">
+          <DataField>LogoMimeType</DataField>
+          <rd:UserDefined>true</rd:UserDefined>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
+  <ReportSections></ReportSections>
+  <ReportParameters>
+    <ReportParameter Name="TableGuid">
+      <DataType>String</DataType>
+      <Prompt>TableGuid</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <ReportParametersLayout>
+    <GridLayoutDefinition>
+      <NumberOfColumns>1</NumberOfColumns>
+      <NumberOfRows>1</NumberOfRows>
+      <CellDefinitions>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>0</RowIndex>
+          <ParameterName>TableGuid</ParameterName>
+        </CellDefinition>
+      </CellDefinitions>
+    </GridLayoutDefinition>
+  </ReportParametersLayout>
+  <Code></Code>
+  <EmbeddedImages></EmbeddedImages>
+  <Language>=User!Language</Language>
+  <CodeModules>
+    <CodeModule></CodeModule>
+  </CodeModules>
+  <Classes>
+    <Class>
+      <ClassName></ClassName>
+      <InstanceName>obj</InstanceName>
+    </Class>
+  </Classes>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportServerUrl></rd:ReportServerUrl>
+  <rd:ReportID></rd:ReportID>
+</Report>
