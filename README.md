@@ -2,6 +2,9 @@
 
 This module can be used by importing `sortxml.sort_xml` or by running standalone from the command-line.
 
+### Installation:
+`pip install sortxml`
+
 ## Using `sort_xml()`:
 
 Returns an ElementTree representing the resulting whole document. ElementTree can easily be converted to string or written to a file like so:
